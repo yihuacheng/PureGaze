@@ -1,7 +1,7 @@
-# PureGaze: Purifying Gaze Feature for Generalizable Gaze Estimation
+# PureGaze: Purifying Gaze Feature for Generalizable Gaze Estimation (Updating...)
 ![License CC BY-NC](https://img.shields.io/badge/license-CC_BY--NC-DodgerBlue.svg?style=plastic)
 
-## Description
+## Description 
 
 Our work is accpeted by **AAAI 2022**.
 
