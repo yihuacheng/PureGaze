@@ -1,0 +1,14 @@
+---
+load:
+    begin: 5
+    end: 5
+    steps: 1
+data: 
+    image: "/home/chengyihua/dataset/FaceBased/EyeDiap/Image"
+    label: "/home/chengyihua/dataset/FaceBased/EyeDiap/ClusterLabel"
+    name: diap
+    header: True
+    isFolder: True
+savename: "evaluation-diap"
+device: 1
+reader: reader_adap

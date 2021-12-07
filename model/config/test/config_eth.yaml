@@ -1,0 +1,14 @@
+---
+load:
+    begin: 4
+    end: 4
+    steps: 1
+data: 
+    image: "/home/chengyihua/dataset/FaceBased/ETH-Gaze/Image/train"
+    label: "/home/chengyihua/dataset/FaceBased/ETH-Gaze/Label/valid.label"
+    name: eth
+    header: True
+    isFolder: False
+savename: "evaluation"
+device: 0
+reader: reader_adap

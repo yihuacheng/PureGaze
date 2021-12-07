@@ -1,0 +1,14 @@
+---
+load:
+    begin: 5
+    end: 5
+    steps: 1
+data: 
+    image: "/home/chengyihua/dataset/FaceBased/MPIIFaceGaze/Image"
+    label: "/home/chengyihua/dataset/FaceBased/MPIIFaceGaze/Label"
+    name: mpii
+    header: True
+    isFolder: True
+savename: "evaluation-mpii"
+device: 0
+reader: reader_adap

@@ -1,0 +1,25 @@
+---
+params:
+    batch_size: 24
+    epoch: 100
+    lr: 0.0001
+    decay: 1
+    decay_step: 10
+
+save:
+    metapath: "/home/chengyihua/work/PureGaze/camera-ready/exp/Res50-PureGaze/"
+    folder: gaze360
+    name: eth
+    step: 10
+
+data:
+    image: "/home/chengyihua/dataset/FaceBased/Gaze360/Image/"
+    label: "/home/chengyihua/dataset/FaceBased/Gaze360/Label/train.label"
+    header: True
+    name: gaze360
+    isFolder: False
+
+pretrain: False
+device: 0
+reader: reader_adap
+map: "/home/chengyihua/work/PureGaze/Camera-ready/Masker/360-masker.jpg"
