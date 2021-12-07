@@ -26,8 +26,40 @@ implicitly purify the gaze feature without defining gaze-irrelevant feature.
 
 **Feature visualization:** The result clearly explains the purification. Our purified feature contains less gaze-irrelevant feature and naturally improves the cross-domain performance.
 
-## Requirement
-We build the project with   `pytorch1.7.0`.
+## Usage
 
+This is a re-implemented version by Pytorch1.7.1 (origin is Pytorch1.0.1). 
 
+We provides an Res50-Version PureGaze. 
+If you want to change the backbone to Res18, you could use the file in `Model/Res18`.
 
+### Resourse
+
+`Model/`: Implemented code.  
+`Masker/`: The masker used for training.
+
+### Get Started
+
+1. You could find data processing code from [this link](https://github.com/yihuacheng/GazeEstimation-Summary).
+
+2. modifing files in `config/` folder, and run commands like: 
+
+    **Training:**`python trainer/total.py -c config/train/config-eth.yaml`
+
+    **Test:**`python tester/total.py -s config/train/config-eth.yaml -t config/test/config-mpii.yaml`
+
+    **Visual:**`python tester/visual.py -s config/train/config-eth.yaml -t config/test/config-mpii.yaml`
+
+### Pre-trained model.
+We provide a pre-trained model of Res50-version PureGaze.
+You can find it from [this link](https://github.com/yihuacheng/GazeEstimation-Summary).
+
+### Citation.
+```
+@article{cheng2022puregaze,
+  title={PureGaze: Purifying Gaze Feature for Generalizable Gaze Estimation},
+  author={Yihua Cheng and Yiwei Bao and Feng Lu},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2022}
+}
+```
