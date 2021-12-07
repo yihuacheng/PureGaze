@@ -63,3 +63,6 @@ You can find it from [this link](https://github.com/yihuacheng/GazeEstimation-Su
   year={2022}
 }
 ```
+
+### Contact
+Please email yihua_c@buaa.edu.cn.
