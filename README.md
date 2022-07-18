@@ -44,7 +44,7 @@ If you want to change the backbone to Res18, you could use the file in `Model/Re
 
 2. modifing files in `config/` folder, and run commands like: 
 
-    **Training:**`python trainer/total.py -c config/train/config-eth.yaml`
+    **Training:**`python trainer/trainer.py -c config/train/config-eth.yaml`
 
     **Test:**`python tester/total.py -s config/train/config-eth.yaml -t config/test/config-mpii.yaml`
 
