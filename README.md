@@ -54,6 +54,9 @@ If you want to change the backbone to Res18, you could use the file in `Model/Re
 We provide a pre-trained model of Res50-version PureGaze.
 You can find it from [this link](https://github.com/yihuacheng/GazeEstimation-Summary).
 
+### Warning.
+If you encounter an error of approximately 20 degrees in the ETH-XGaze dataset, it may be due to the disparity in gaze format between ETH-XGaze, which presents gaze as (Pitch Yaw), and our processed datasets including MPIIGaze, EyeDiap and Gaze360, which present gaze as (Yaw Pitch). To address this, please make the necessary modifications to the `gazeto3d(gaze)` function during testing.
+
 ### Citation.
 ```
 @article{cheng2022puregaze,
@@ -65,4 +68,4 @@ You can find it from [this link](https://github.com/yihuacheng/GazeEstimation-Su
 ```
 
 ### Contact
-Please email yihua_c@buaa.edu.cn.
+Please email y.cheng.2@bham.ac.uk
